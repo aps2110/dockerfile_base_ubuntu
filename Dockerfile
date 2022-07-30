@@ -3,8 +3,8 @@ WORKDIR app/
 RUN apt-get update
 RUN apt-get install -y git
 CMD [ "git" ]
-RUN apt-get install -y default-jdk
-CMD ["java", "Main"]
+RUN apt-get install -y openjdk-8-jdk
+CMD ["jshell"]
 RUN apt-get install -y maven
 CMD ["mvn"]
 RUN apt-get install -y tomcat7
