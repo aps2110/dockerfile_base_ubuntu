@@ -3,7 +3,7 @@ WORKDIR app/
 RUN apt-get update
 RUN apt-get install -y git
 CMD [ "git" ]
-RUN apt-get install -y openjdk-11-jdk
+RUN apt-get install -y default-jdk
 CMD ["java", "Main"]
 RUN apt-get install -y maven
 CMD ["mvn"]
