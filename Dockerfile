@@ -7,7 +7,7 @@ RUN apt-get install -y default-jdk
 CMD ["java", "Main"]
 RUN apt-get install -y maven
 CMD ["mvn"]
-RUN apt-get install -y tomcat
+RUN apt-get install -y tomcat7
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
