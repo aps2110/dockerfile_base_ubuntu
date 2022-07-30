@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:16.04
 WORKDIR app/
 RUN apt-get update
 RUN apt-get install -y git
@@ -7,7 +7,7 @@ RUN apt-get install -y default-jdk
 CMD ["java", "Main"]
 RUN apt-get install -y maven
 CMD ["mvn"]
-RUN apt-get install -y tomcat9
+RUN apt-get install -y tomcat
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
