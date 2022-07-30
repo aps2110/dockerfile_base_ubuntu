@@ -7,7 +7,7 @@ RUN apt-get install -y maven
 CMD ["mvn"]
 
 RUN apt-get install -y tomcat9
-EXPOS 8080
+EXPOSE 8080
 CMD CMD ["catalina.sh" "run"]
 
 WORKDIR app/
