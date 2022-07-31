@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:16.04
 WORKDIR app/
 RUN apt-get update
 RUN apt-get install -y git
